@@ -1,3 +1,7 @@
+package FlowerStore;
+
+import FlowerStore.Flower;
+
 import java.util.List;
 
 public class FlowerFilter {

@@ -1,3 +1,7 @@
+package FlowerStore;
+
+import FlowerStore.Flower;
+
 public class FlowerPack {
     public int amount;
     public Flower flower;

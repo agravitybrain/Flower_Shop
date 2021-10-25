@@ -1,3 +1,5 @@
+package FlowerStore;
+
 public class FlowerBucket {
     private final int limit = 10;
     private int amount = 0;
