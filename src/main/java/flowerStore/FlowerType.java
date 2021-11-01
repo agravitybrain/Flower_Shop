@@ -1,4 +1,4 @@
-package FlowerStore;
+package flowerStore;
 
 public enum FlowerType {
     ROSE("Rose"),

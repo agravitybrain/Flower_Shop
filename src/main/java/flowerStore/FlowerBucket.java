@@ -1,6 +1,6 @@
-package FlowerStore;
+package flowerStore;
 
-public class FlowerBucket {
+public class FlowerBucket extends Item{
     private final int limit = 10;
     private int amount = 0;
     public FlowerPack[] bucket = new FlowerPack[limit];
@@ -12,7 +12,7 @@ public class FlowerBucket {
         }
         else{
             System.out.println("В мене був \"знайомий\" який на розетці на лєві номера \\" +
-                    "замовляв 1000 рюкзаків Бобі-атнівор, тому будьмо реалістами, нікому \\" +
+                    "замовляв 1000 рюкзаків Бобі-антівор, тому будьмо реалістами, нікому \\" +
                     "не потрібно букета з 1000 жмутками квітів у магазині де є лише 3 види");
         }
     }
@@ -27,5 +27,10 @@ public class FlowerBucket {
             price += flowerPack.price();
         }
         return price;
+    }
+
+    @Override
+    public String getDescription() {
+        return "This is bucket it costs" + this.price();
     }
 }

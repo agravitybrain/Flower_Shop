@@ -1,4 +1,4 @@
-package FlowerStore;
+package flowerStore;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -23,5 +23,9 @@ class FlowerBucketTest {
     @Test
     void price() {
         assertEquals(2 * price * amount, bucket.price());
+    }
+    @Test
+    void getDescription() {
+        assertEquals("This is bucket it costs" + bucket.price(), bucket.getDescription());
     }
 }

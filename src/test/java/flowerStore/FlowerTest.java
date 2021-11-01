@@ -1,11 +1,9 @@
-package FlowerStore;
+package flowerStore;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class FlowerTest {
     private Flower flower;
@@ -31,4 +29,10 @@ class FlowerTest {
     void getSepalLength() {
         assertEquals(99, flower.getSepalLength());
     }
+
+    @Test
+    void price() { assertEquals(10.56, flower.price()); }
+
+    @Test
+    void getDescription() {assertEquals(FlowerType.TULIP.toString(), flower.getDescription()); }
 }

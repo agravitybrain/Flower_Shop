@@ -1,12 +1,10 @@
-package FlowerStore;
-
-import FlowerStore.Flower;
+package flowerStore;
 
 public class FlowerPack {
     public int amount;
     public Flower flower;
 
-    FlowerPack(Flower flower, int amount){
+    public FlowerPack(Flower flower, int amount){
         this.flower = flower;
         this.amount = amount;
     }
