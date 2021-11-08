@@ -7,9 +7,11 @@ import org.junit.jupiter.api.Test;
 
 class FlowerTest {
     private Flower flower;
+    private byte[] color;
 
     @BeforeEach
     void setUp() {
+        color = new byte[] {101, 101, 101};
         double price = 10.56;
         flower = new Flower(FlowerType.TULIP, new byte[] {101, 101, 101}, price, 99);
     }
@@ -17,7 +19,9 @@ class FlowerTest {
 
     @Test
     void getColor() {
-        assertEquals(new byte[] {101, 101, 101}, flower.getColor());
+        for (int kar = 0; kar < 3; kar++){
+            assertEquals(color[kar], flower.getColor()[kar]);
+        }
     }
 
     @Test

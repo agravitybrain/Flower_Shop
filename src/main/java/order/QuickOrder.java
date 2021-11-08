@@ -26,7 +26,7 @@ public enum QuickOrder {
 
         if (orderConstr == QuickOrder.ROSE_BUCKET) {
 
-            flower = new Flower(FlowerType.ROSE new byte[] {101, 101, 101}, 15, 59);
+            flower = new Flower(FlowerType.ROSE, new byte[] {101, 101, 101}, 15, 59);
 
 
         } else if (orderConstr == QuickOrder.TULIP_BUCKET) {
@@ -43,7 +43,7 @@ public enum QuickOrder {
 
         FlowerPack pack = new FlowerPack(flower, 10);
 
-        // Add pack to bucket(We cast because SOLID and we need to be able to change from Item to FlowerBucket)
+
         ((FlowerBucket) bucket).addFlowerPack(pack);
 
         // Manage the order
